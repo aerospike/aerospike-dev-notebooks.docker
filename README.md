@@ -14,7 +14,7 @@ and Docker Desktop installation at : [https://docs.docker.com/desktop/](https://
 1. Getting the image
    1. If using image from [the public Docker Registry](https://index.docker.io/)
       1. Download the image:
-        docker pull aerospike/aerospike-dev-notebooks
+        docker pull aerospike/intro-notebooks
    1. If building image
       1. Git clone image repo:
         git clone https://github.com/citrusleaf/aerospike-dev-notebooks.docker.git
