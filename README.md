@@ -4,20 +4,18 @@ Aerospike is an open source distributed database. Aerospike is built on a
 "shared nothing" architecture designed to reliably stores terabytes of data 
 with automatic fail-over, replication and cross data-center synchronization.
 
-Documentation for Aerospike is available at [http://aerospike.com/docs](http://aerospike.com/docs),
+Documentation for Aerospike is available at [https://aerospike.com/docs](https://aerospike.com/docs),
 and Docker Desktop installation at : [https://docs.docker.com/desktop/](https://docs.docker.com/desktop/)
 
 ## Using this Image
 
 1. Install [Docker](https://www.docker.io/).
 
-1. Get the image:
-
-   Download the image from the public [Docker Registry](https://index.docker.io/):
+1. Get [the image](https://hub.docker.com/r/aerospike/intro-notebooks) from [Docker Hub](https://hub.docker.com/u/aerospike):
    ```
    docker pull aerospike/intro-notebooks
    ```
-      If building the image:
+      [Alternatively] If building the image:
       1. Git clone image repo:
          ```
          git clone https://github.com/aerospike/aerospike-dev-notebooks.docker.git
@@ -34,26 +32,27 @@ and Docker Desktop installation at : [https://docs.docker.com/desktop/](https://
    ```
    docker run -e "LOGFILE=/opt/aerospike/aerospike.log" --name aero-nb -p 8888:8888 aerospike/intro-notebooks
    ```
-1. The url with token should be printed on the output. By default it should be:
+1. Point your browser at the url with token which should be printed on the output. By default it should be:
    ```
    http://127.0.0.1:8888/?token=<token>
    ```
-1. Example run with URL:
-   ```text
-   $ docker run --name aero-nb -p 8888:8888 aerospike/intro-notebooks
 
-   link eth0 state up
-   link eth0 state up in 0
-   Set username to: jovyan
-   usermod: no changes
-   Executing the command: jupyter notebook
-   [I 05:28:34.202 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
-   [I 05:28:34.954 NotebookApp] JupyterLab extension loaded from /opt/conda/lib/python3.8/site-packages/jupyterlab
-   [I 05:28:34.954 NotebookApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
-   [I 05:28:34.957 NotebookApp] Serving notebooks from local directory: /home/jovyan/notebooks
-   [I 05:28:34.957 NotebookApp] Jupyter Notebook 6.1.4 is running at:
-   [I 05:28:34.957 NotebookApp] http://6a374afd9f00:8888/?token=c45783e6631e305c97f6919905250e61f09049e750813cf6
-   [I 05:28:34.957 NotebookApp]  or http://127.0.0.1:8888/?token=c45783e6631e305c97f6919905250e61f09049e750813cf6
-   [I 05:28:34.957 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+Example:
+```text
+$ docker run --name aero-nb -p 8888:8888 aerospike/intro-notebooks
 
-   ```
+link eth0 state up
+link eth0 state up in 0
+Set username to: jovyan
+usermod: no changes
+Executing the command: jupyter notebook
+[I 05:28:34.202 NotebookApp] Writing notebook server cookie secret to /home/jovyan/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 05:28:34.954 NotebookApp] JupyterLab extension loaded from /opt/conda/lib/python3.8/site-packages/jupyterlab
+[I 05:28:34.954 NotebookApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 05:28:34.957 NotebookApp] Serving notebooks from local directory: /home/jovyan/notebooks
+[I 05:28:34.957 NotebookApp] Jupyter Notebook 6.1.4 is running at:
+[I 05:28:34.957 NotebookApp] http://6a374afd9f00:8888/?token=c45783e6631e305c97f6919905250e61f09049e750813cf6
+[I 05:28:34.957 NotebookApp]  or http://127.0.0.1:8888/?token=c45783e6631e305c97f6919905250e61f09049e750813cf6
+[I 05:28:34.957 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+
+```
