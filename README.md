@@ -1,3 +1,5 @@
+## NOTE: THIS REPOSITORY HAS BEEN DEPRECATED AND ITS CONTENT HAS MOVED. PLEASE USE AND MAKE ALL CHANGES IN THE [NEW REPOSITORY](https://github.com/aerospike-examples/interactive-notebooks).
+
 # Aerospike 
 
 Aerospike is an open source distributed database. Aerospike is built on a 
